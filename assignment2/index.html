@@ -93,6 +93,15 @@
         display: inline-block;
         }
 
+		 .dropdown-content2 {
+        display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px 12px;
+    z-index: 1;
+}
         .dropdown-content {
         display: none;
     position: absolute;
@@ -394,49 +403,32 @@
 <body>
               
 <header class="header">
-   
    <div>
-   
   <ul>
       <div class="logo" id="home"> 
-	  <a class="logoimage" href="#home"><img   src="https://skytech.layeredwebs.com/images/skytech-logo.png"
+	  <a class="logoimage" href="./index.html"><img   src="https://skytech.layeredwebs.com/images/skytech-logo.png"
 	  style="height:115px;" ></a>
 	  <h2 class="logo"> Jobs</h2>
       </div>
 	   <li class="dropdown">
        <a href="/faq" class="Share" class="dropdown" >Share <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-       <ul class="dropdown-content">
+       <ul class="dropdown-content2">
             <li><a class="Home" href="https://www.resume.com/builder">Resume</a></li>
             <li><a class="Home" href="https://jtbd.info/replacing-the-user-story-with-the-job-story-af7cdee10c27">Your Story </a></li>
        </ul>
-	   	   <li><a class="Map" class="card:hover" href="#map">Map</a></li>
-		    
-	  
-     
-     
-	  
-	  
+	   	   <li><a class="Map" class="card:hover" href="#map">Map</a></li>  
 	  <li class="dropdown">
-       <a href="/faq" class="Help" class="dropdown" >Help <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+       <a href="#faq" class="Help" class="dropdown" >Help <i class="fa fa-angle-down" aria-hidden="true"></i></a>
        <ul class="dropdown-content">
             <li><a class="Home" href="mailto:nus.skytech@gmail.com">FAQ</a></li>
-            <li><a class="Home" href="https://twitter.com/NUS_SkyTech">Contact Us</a></li>
+            <li><a class="Home" href="./contact-us.html">Contact Us</a></li>
        </ul>
     </li>
-	<li><a class="Catagory" href="a">Category</a></li>
-	
-	  
-	  
-
-	   
-	   
-	  
-    </li>
-	 
+	<li><a class="Catagory" href="a">Category</a></li> 
+    </li>	 
     </ul>
 	</div>
 </header>
-
 
 <div class="bannerbox">
         <div class="banner">
