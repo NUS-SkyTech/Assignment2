@@ -406,8 +406,8 @@
 	   <li class="dropdown">
        <a href="/faq" class="Share" class="dropdown" >Share <i class="fa fa-angle-down" aria-hidden="true"></i></a>
        <ul class="dropdown-content">
-            <li><a class="Home" href="a">Resume</a></li>
-            <li><a class="Home" href="a">Your Story </a></li>
+            <li><a class="Home" href="https://www.resume.com/builder">Resume</a></li>
+            <li><a class="Home" href="https://jtbd.info/replacing-the-user-story-with-the-job-story-af7cdee10c27">Your Story </a></li>
        </ul>
 	   	   <li><a class="Map" class="card:hover" href="#map">Map</a></li>
 		    
@@ -419,8 +419,8 @@
 	  <li class="dropdown">
        <a href="/faq" class="Help" class="dropdown" >Help <i class="fa fa-angle-down" aria-hidden="true"></i></a>
        <ul class="dropdown-content">
-            <li><a class="Home" href="a">FAQ    </a></li>
-            <li><a class="Home" href="a">Contact Us</a></li>
+            <li><a class="Home" href="mailto:nus.skytech@gmail.com">FAQ</a></li>
+            <li><a class="Home" href="https://twitter.com/NUS_SkyTech">Contact Us</a></li>
        </ul>
     </li>
 	<li><a class="Catagory" href="a">Category</a></li>
@@ -573,14 +573,14 @@ function showSlides(n) {
 
 		var markers = L.markerClusterGroup({ chunkedLoading: true });
 		
-		var greenIcon = L.icon({
+		var Icon = L.icon({
 			iconUrl: 'https://png.icons8.com/office/30/000000/find-matching-job.png',
 		})
 
 			
 		for (i = 0; i < data.length; i++) {	
 
-			var marker = L.marker([data[i].lat, data[i].lng],{icon: greenIcon}).addTo(map);
+			var marker = L.marker([data[i].lat, data[i].lng],{icon: Icon}).addTo(map);
 
 			marker.bindPopup("<b>Company Name: </b>" + data[i].company_name + "<br><b>Company Address: </b>" + data[i].company_address + "<br><b>Industry: </b>" + data[i].industry + "<br><b>Looking For: </b>" + data[i].number_of_people + " x " + data[i].position + "<br><b>Job Requirements: </b>" + data[i].requirements + "<br><b>Job posted on: </b>" + data[i].timestamp);
 
